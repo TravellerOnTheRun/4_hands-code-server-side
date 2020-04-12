@@ -7,8 +7,6 @@ const adminRoutes = require('./routes/admin');
 const authRoutes = require('./routes/auth');
 const formRoutes = require('./routes/forms');
 
-const password = 'aleksivchenko1344';
-
 const server = express();
 
 server.use(bodyParser.json()); //application/json
@@ -36,7 +34,7 @@ server.use((error, req, res, next) => {
 
 //Server listening and db connection
 mongoose.connect(
-    `mongodb+srv://alexsplatter:${password}@4-hands-code-i2ccm.mongodb.net/administrator?retryWrites=true&w=majority`, 
+    `this should be your server`, 
     { useNewUrlParser: true, useUnifiedTopology: true }
 )
 .then(res => {
